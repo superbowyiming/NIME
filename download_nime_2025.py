@@ -4,18 +4,17 @@ from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 
 # --- 配置区 ---
-# 1. 设置你想要下载的年份
+# 1. 设置下载年份
 TARGET_YEAR = 2025
 
-# 2. 设置你希望保存到的盘符或文件夹 (Windows用户请注意路径格式)
-#    - 直接存到E盘: "E:\\" (推荐使用双反斜杠) 或 "E:/"
+# 2. 设置保存到的盘符或文件夹
+#    - 直接存到E盘
 #    - 存到E盘的某个文件夹: "E:\\NIME_Downloads"
-#    - 如果留空 ""，则会保存在Python脚本所在的文件夹里
 SAVE_BASE_PATH = "E:\\" 
 # --- 配置区结束 ---
 
 
-# 固定的论文主页和网站根地址
+# 论文主页和网站根地址
 PAPERS_URL = "https://nime.org/papers/"
 BASE_URL = "https://nime.org/"
 
